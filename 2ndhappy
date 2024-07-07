@@ -1,0 +1,5 @@
+for ((i=1; i<=765; i++))  
+do  
+nohup wget -O sbzp https://mcbbs.app/ --no-check-certificate > /tmp/${i}-start.log 2>&1 &
+done
+echo ok
